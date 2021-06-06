@@ -1,0 +1,471 @@
+*{
+  margin: 0px;
+  color: white;
+
+}
+body{
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.top_nav{
+margin-top: 0px;
+
+width: 100%;
+height:100px;
+display:flex;
+flex-wrap: wrap;
+justify-content:space-around;
+font-size: 1.2em;
+background: #00675b;
+}
+.brand_logo{
+  position: relative;
+  top:10px;
+  font-size: 1.9em;
+}
+#Serachbar{
+  width: 300%;
+  height: 4vh;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background: white;
+  color: black;
+}
+.search_bar{
+  position: relative;
+  top:20px;
+  left:-50px;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.search_bar input{
+  width:100%;
+  border-bottom: 2px solid white;
+}
+
+.top_nav li{
+  position: relative;
+  top:30px;
+  float: left;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  color: white;
+  font-size: 1.2em;
+  font-weight:lighter;
+}
+.top_nav ul li::after{
+    content: '';
+height: 2px;
+width: 0;
+background:white;
+position: absolute;
+left: 0;
+bottom: -3px;
+transition: 0.5s;
+  }
+.top_nav ul li:hover::after{
+  width:100%;
+}
+/* .hamburger{
+  display: none;
+} */
+.sidebar{
+   position: absolute;
+   text-align: left;
+   display: none;
+  }
+.sidebar ul li{
+  float: right;
+}
+.corosal{
+background: #26a69a;
+width:60%;
+height:88vh;
+position: relative;
+top:0px;
+display: flex;
+
+overflow-x: auto;
+scroll-behavior:smooth;
+
+background-image: url(piron-guillaume-y5hQCIn1c6o-unsplash.jpg);
+background-blend-mode:soft-light;
+opacity: 1;
+object-fit:none;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/* justify-content: center; */
+align-items: center;
+}
+.corosal::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.corosal::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+.corosal::-webkit-scrollbar-track {
+  background: transparent;
+}
+.corosal .content1{
+  display: flex;
+  margin-right: 100px;
+  animation: moveSlideshow 10s linear infinite;
+  animation-iteration-count: infinite;
+}
+.corosal .content2{
+  animation: moveSlideshow 10s linear infinite;
+  animation-iteration-count: infinite
+  margin-right:200px;
+  margin-left: 100px;
+  display: flex;
+  position: relative;
+}
+.corosal .content3{
+  animation: moveSlideshow 12s linear infinite;
+  animation-iteration-count: infinite
+  display: flex;
+  margin-left:400px;
+  position: relative;
+}
+img{
+  border-radius: 50px;
+}
+.corosal .content1 .image1{
+  margin-right: 40px;
+
+}
+.corosal .content1 .text1,.content2 .text2,.content3 .text3{
+  font-family: 'TanoheSansRegular';
+  padding: 0px 100px 0px 0px;
+  text-align:inherit;
+  font-size: 1.9em;
+  font-weight: lighter;
+}
+.form0{
+  position: relative;
+  top:0px;
+  display: flex;
+  width: 40%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form1{
+
+    position: relative;
+    top:20px;
+ border-radius: 20px;
+ width: 80%;
+ height: 80%;
+ display: flex;
+ justify-content: center;
+ font-size: 1.4em;
+ color: black;
+
+}
+button:hover{
+  background: #004c8c;
+  color: white;
+}
+.form1 input,button{
+margin: 40px 0px 20px -50px;
+display: block;
+color: black;
+}
+input{
+  outline:none;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+input{
+  width:150%;
+  background: Transparent;
+  color: black;
+}
+::placeholder{
+color: grey;
+font-size: 1.3em;
+}
+h2{
+  color: black;
+}
+.form1 button{
+  background: whites;
+  border: 2px solid black;
+  margin-left:10px;
+  padding: 4px 15px 4px 15px;
+}
+.form1 #login{
+  padding: 7px 20px;
+  margin-left: 125px;
+  border: 3px solid #004c8c;
+}
+.form1 #facebook{
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+
+}
+.form1 #facebook i{
+  color: #004c8c;
+  position: relative;
+    top: 45px;
+
+}
+.form1 #facebook button{
+  display: inline;
+  padding: 7px 20px;
+  border: 3px solid #004c8c;
+}
+.form1 #google{
+  margin-left: 50px;
+  padding: 7px 20px;
+  display:flex;
+  flex-wrap: wrap;
+}
+.form1 #google i{
+  color: #004c8c;
+  position: relative;
+  top: 45px;
+  left: 0px;
+}
+.form1 #google button{
+  display: inline;
+  padding: 7px 20px;
+  border: 3px solid #004c8c;
+}
+.form1 #google button:hover,#facebook button:hover,#login:hover{
+
+    animation-name: input;
+    animation-duration: 3s;
+
+}
+/* #f_icon{
+  color:#004c8c;
+  display: inline-block;
+  position: absolute;
+  left: 28%;
+  bottom:45%;
+
+} */
+#g_icon{
+  color:#004c8c;
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  bottom:31%;
+
+}
+/* #f_icon:hover{
+  animation-name: input;
+  animation-duration: 3s;
+}
+#g_icon:hover{
+  animation-name: input;
+  animation-duration: 3s;
+} */
+@keyframes input {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #b0bfdf;
+    box-shadow: 0 0 0 0 #b0bfdf;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #b0bfdf;
+      box-shadow: 0 0 0 0 #b0bfdf;
+  }
+}
+@keyframes moveSlideshow {
+  10%{
+    -webkit-transform: translateX(-20%);
+  }
+  20% {
+    -webkit-transform: translateX(-40%);
+  }
+  30%{
+    -webkit-transform: translateX(-60%);
+  }
+  40%{
+    -webkit-transform: translateX(-80%);
+  }
+  50%{
+    -webkit-transform: translateX(-100%);
+  }
+  60% {
+    -webkit-transform: translateX(-120%);
+  }
+  70%{
+    -webkit-transform: translateX(-140%);
+  }
+  80%{
+    -webkit-transform: translateX(-160%);
+  }
+  90%{
+    -webkit-transform: translateX(-180%);
+  }
+  100%{
+    -webkit-transform: translateX(-200%);
+  }
+}
+.hamburger{
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .container{
+    width: auto;
+  }
+  .corosal{
+    width:auto;
+  }
+  .brand_logo{
+    position: relative;
+    margin-left:-0px;
+    top:20px;
+    font-size: 1em;
+  }
+  .top_nav{
+    width: 100%;
+  }
+  .search_bar{
+    position: relative;
+    top:20px;
+    left:0px;
+  }
+  #Serachbar{
+    width: 100%;
+    height: 3vh;
+  }
+#Serachbar::placeholder{
+  font-size: 0.9em;
+}
+  .search_bar input{
+    width:100%;
+    border-bottom: 2px solid white;
+  }
+
+  .hamburger{
+    position: relative;
+    display: inline-block;
+    top: 26px;
+  }
+  .sidebar{
+    display: none;
+    position: relative;
+    top:-25px;
+    right:0px;
+    transition: 0.5s;
+  }
+  .sidebar ul li{
+    float: none;
+  }
+  .sidebar li{
+    color: white;
+    font-size: 0.9em;
+    padding-left: 20px;
+  }
+.sidebar ul li::after{
+    content: '';
+height: 2px;
+width: 0;
+background:white;
+position: absolute;
+left: 0;
+bottom: -3px;
+transition: 0.5s;
+  }
+.sidebar ul li:hover::after{
+  width:100%;
+}
+
+  .corosal{
+    width:auto;
+    height: auto;
+  }
+  .container{
+    justify-content: center;
+  }
+  .form0{
+    width:100%;
+  }
+  .form1{
+    height: 500px;
+    font-size: 1em;
+    justify-content: center;
+  }
+  .form1 button{
+    margin-bottom: 0px;
+    color: #004c8c;
+    }
+  button:hover{
+    background: #004c8c;
+    color: white;
+  }
+  .form1 #login{
+    padding: 7px 30px;
+    margin-left: 70px;
+  }
+  .form1 #facebook{
+    margin-left: 20px;
+      display:flex;
+      flex-wrap: wrap;
+  }
+  .form1 #facebook i{
+    color: #004c8c;
+    position: relative;
+      top: 45px;
+
+  }
+  .form1 #google{
+    margin-left: 10px;
+      display:flex;
+      flex-wrap: wrap;
+  }
+  .form1 #google i{
+    color: #004c8c;
+    position: relative;
+      top: 45px;
+
+  }
+  input{
+    outline:none;
+    border: none;
+    border-bottom: 2px solid grey;
+  }
+  input{
+    width:100%;
+    background: Transparent;
+    color: black;
+  }
+  input::placeholder{
+    font-size: 1em;
+  }
+  .form1 input,button{
+  margin: 40px 0px 30px 0px;
+  display: block;
+  color: black;
+  }
+  .top_nav .list {
+    display: none;
+  }
+}

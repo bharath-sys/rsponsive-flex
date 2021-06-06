@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tanohe-sans" type="text/css"/>
+      <script src="https://kit.fontawesome.com/5c0510f9cc.js" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+       function openNav() {
+        document.getElementById("sidebar").style.display = "inline";
+        document.getElementById("hamburger").style.display = "none";
+        }
+
+        function closeNav() {
+        document.getElementById("sidebar").style.display = "none";
+        document.getElementById("hamburger").style.display= "inline";
+        }
+   </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_nav">
+        <div class="brand_logo">
+          <p>VTie-In</p>
+        </div>
+            <div class="search_bar">
+              <input id="Serachbar" placeholder="Search" type="text" name="" value="">
+              <div class="s_icon">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+
+            <div class="list">
+              <ul>
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-phone"></i> Contact</li>
+                <li><i class="fas fa-headset"></i> Support</li>
+              </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+              <i onclick="openNav()" class="fas fa-bars"></i>
+
+              </div>
+              <div class="sidebar" id="sidebar">
+                <ul>
+                  <li onclick="closeNav()">close</li>
+                  <li>Home</li>
+                  <li>Contact</li>
+                  <li>Support</li>
+                </ul>
+            </div>
+
+          </div>
+
+      <div class="corosal">
+        <div class="content1">
+          <div class="image1">
+                 <img src="jeshoots-com-l0j0DHVWcIE-unsplash.jpg" height="500px" alt="">
+          </div>
+          <div class="text1">
+                 <p>your saftey is main priority</p>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="image2">
+                 <img src="national-cancer-institute-701-FJcjLAQ-unsplash (1).jpg" height="500px" alt="">
+          </div>
+          <div class="text2">
+                 <p>making communities better</p>
+          </div>
+          <!-- <div class="content3">
+            <div class="image3">
+                   <img src="olga-guryanova-tMFeatBSS4s-unsplash.jpg" height="500px" alt="">
+            </div>
+            <div class="text3">
+                   <p>janu too side</p>
+            </div>
+            <div class="content3">
+              <div class="image3">
+                     <img src="olga-guryanova-tMFeatBSS4s-unsplash.jpg" height="500px" alt="">
+              </div>
+              <div class="text3">
+                     <p>janu too side</p>
+              </div> -->
+        </div>
+      </div>
+
+      <div class="form0">
+          <div class="form1">
+            <form class="" action="index.html" method="post">
+              <h2 style="color:#00675b">Welcome to VTie in</h2>
+              <input class="inp" placeholder="Username" type="text" name="" value="">
+              <input  class="inp" placeholder="Password" type="text" name="" value="">
+              <button id="login" type="button" name="button">log in</button>
+              <div id="facebook">
+                <i id="f_icon" class="fab fa-facebook"></i>
+                <button  type="button" name="button">login using facebook</button>
+              </div>
+              <div id="google">
+                <i id="g_icon" class="fab fa-google"></i>
+                <button  type="button" name="button">login using google</button>
+              </div>
+            </form>
+          </div>
+      </div>
+
+
+      </div>
+  </body>
+</html>

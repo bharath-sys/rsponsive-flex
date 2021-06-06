@@ -370,6 +370,9 @@ h2{
     top: 26px;
   }
   .sidebar{
+    width:100%;
+    background: black;
+    height: 200px;
     display: none;
     position: relative;
     top:-25px;
